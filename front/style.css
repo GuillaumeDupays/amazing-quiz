@@ -1,0 +1,33 @@
+body {
+	font-family: 'Rampart One', cursive;
+}
+.buttons-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 30vh;
+}
+.buttons-group button {
+	margin: auto;
+	/* margin-bottom: 5%; */
+	padding: 5%;
+	width: 80%;
+	background: black;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	font-size: x-large;
+}
+.box-header {
+	display: flex;
+	min-height: 25vh;
+}
+.box-header h1 {
+	margin: auto;
+	text-align: center;
+}
+.official-logo {
+	min-width: 5%;
+}

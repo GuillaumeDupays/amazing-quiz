@@ -1,0 +1,25 @@
+{
+  "name": "quizcms",
+  "version": "1.0.0",
+  "description": "an app to create amazing quiz with vanilla.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeDupays/amazing-quiz.git"
+  },
+  "keywords": [
+    "quiz"
+  ],
+  "author": "Guillaume Dupays",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuillaumeDupays/amazing-quiz/issues"
+  },
+  "homepage": "https://github.com/GuillaumeDupays/amazing-quiz#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

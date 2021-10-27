@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QUIZ CMS</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="row box-header">
+				<img
+					src="images/logo-quiz.jpeg"
+					alt="Amazing-quiz.com"
+					class="official-logo"
+				/>
+				<h1>AMAZING QUIZZ !</h1>
+			</div>
+			<br />
+		</header>
+		<div class="col buttons-group">
+			<nav>
+				<li class="navbar-item">
+					<a href="/" data-link>/</a>
+				</li>
+				<li class="navbar-item">
+					<a href="/home" data-link>Home</a>
+				</li>
+				<li class="navbar-item">
+					<a href="/create-quiz" data-link>Create Quiz</a>
+				</li>
+				<li class="navbar-item">
+					<a href="/contact" data-link>Contact</a>
+				</li>
+			</nav>
+			<!-- <button class="row create-quiz">
+				<a href="#" onclick="router.loadRoute('createQuiz')">
+					Create a Quiz NOW</a
+				>
+			</button>
+			<button class="row saved-quiz">
+				<a href="#" onclick="router.loadRoute('home')"> Saved Quiz</a>
+			</button> -->
+		</div>
+		<div id="app"></div>
+
+		<script type="module" src="app.js"></script>
+		<!-- <script src="Router.js"></script>
+		<script src="routes.js"></script> -->
+	</body>
+</html>
