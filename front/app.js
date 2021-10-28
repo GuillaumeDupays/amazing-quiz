@@ -1,18 +1,17 @@
-import homeView from './views/homeView.js'
+import savedQuiz from './views/savedQuiz.js'
 import createQuizView from './views/createQuizView.js'
 import presentationView from './views/presentationView.js'
-
-let contentDiv = document.getElementById('content')
 
 const navigateTo = (url) => {
 	history.pushState(null, null, url)
 	router()
 }
 
+//routes and view corresponding to modules 'view'
 const router = async () => {
 	const routes = [
-		{ path: '/', view: homeView },
-		{ path: '/home', view: homeView },
+		{ path: '/', view: presentationView },
+		{ path: '/saved-quiz', view: savedQuiz },
 		{ path: '/create-quiz', view: createQuizView },
 		{ path: '/contact', view: presentationView },
 	]
@@ -50,13 +49,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 	router()
 })
-// window.onpopstate = () => {
-// 	contentDiv.innerHTML = routes[window.location.pathname]
-// }
-
-// function onNavItemClick(pathName) {
-// 	window.history.pushState({}, pathName, window.location.origin + pathName)
-// 	contentDiv.innerHTML = routes[pathName]
-// }
-
-// contentDiv.innerHTML = routes[window.location.pathname]

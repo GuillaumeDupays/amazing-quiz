@@ -1,5 +1,11 @@
 body {
 	font-family: 'Rampart One', cursive;
+	display: block;
+}
+.question-template {
+	height: 50px;
+	width: 200px;
+	background: pink;
 }
 .buttons-group {
 	display: flex;
@@ -7,12 +13,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	min-height: 30vh;
+	min-height: 20vh;
 }
 .buttons-group button {
 	margin: auto;
 	/* margin-bottom: 5%; */
-	padding: 5%;
+	padding: 3%;
 	width: 80%;
 	background: black;
 	color: white;
@@ -22,7 +28,7 @@ body {
 }
 .box-header {
 	display: flex;
-	min-height: 25vh;
+	height: 15vh;
 }
 .box-header h1 {
 	margin: auto;
@@ -30,4 +36,9 @@ body {
 }
 .official-logo {
 	min-width: 5%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 1vh;
 }

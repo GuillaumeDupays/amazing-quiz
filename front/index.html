@@ -12,6 +12,8 @@
 			href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
 			rel="stylesheet"
 		/>
+		<script type="module" src="/components/quiz-themes-g.js"></script>
+		<script src="/components/Question.js"></script>
 	</head>
 	<body>
 		<header>
@@ -25,31 +27,20 @@
 			</div>
 			<br />
 		</header>
-		<div class="col buttons-group">
-			<nav>
-				<li class="navbar-item">
-					<a href="/" data-link>/</a>
-				</li>
-				<li class="navbar-item">
-					<a href="/home" data-link>Home</a>
-				</li>
-				<li class="navbar-item">
-					<a href="/create-quiz" data-link>Create Quiz</a>
-				</li>
-				<li class="navbar-item">
-					<a href="/contact" data-link>Contact</a>
-				</li>
-			</nav>
-			<!-- <button class="row create-quiz">
-				<a href="#" onclick="router.loadRoute('createQuiz')">
-					Create a Quiz NOW</a
-				>
+		<nav class="col buttons-group">
+			<button class="row create-quiz">
+				<a href="/create-quiz" data-link>Create a Quiz NOW</a>
 			</button>
 			<button class="row saved-quiz">
-				<a href="#" onclick="router.loadRoute('home')"> Saved Quiz</a>
-			</button> -->
-		</div>
+				<a href="/saved-quiz" data-link>Saved Quiz</a>
+			</button>
+		</nav>
 		<div id="app"></div>
+		<!-- <questions-g /> -->
+		<!-- <quiz-themes-g></quiz-themes-g> -->
+		<footer class="footer">
+			<a href="/contact" data-link>Contact</a>
+		</footer>
 
 		<script type="module" src="app.js"></script>
 		<!-- <script src="Router.js"></script>
